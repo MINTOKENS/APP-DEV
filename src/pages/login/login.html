@@ -1,0 +1,64 @@
+<!--
+  Generated template for the WelcomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content text-center padding class="custom-bg login-page">
+
+  <ion-grid no-padding>
+
+
+    <ion-row>
+      <ion-col col-12 text-center>
+        <ion-card class="login-card">
+          <ion-col class="login-logo" col-12>
+            <img src="assets/imgs/login-logo.png">
+          </ion-col>
+          <ion-card-header padding-top>
+            <p padding-top class="card-title" ion-text color="dark">
+              Welcome Back!
+            </p>
+          </ion-card-header>
+          <ion-card-content padding>
+            <p ion-text color="dark">
+              SIGN IN
+            </p>
+            <form margin-top #loginForm="ngForm" (submit)="login()">
+              <ion-list no-lines>
+                <ion-item margin-top class="form-input">
+                  <ion-input text-center color="pruple-heading" round type="email" placeholder="EMAIL" name="email"
+                    required [(ngModel)]="account.email"></ion-input>
+                </ion-item>
+                <ion-item margin-top class="form-input">
+                  <ion-input text-center color="pruple-heading" round type="password" placeholder="PASSWORD" required
+                    [(ngModel)]="account.password" name="password"></ion-input>
+                </ion-item>
+                <button margin-top ion-button round block color="pruple-heading" [disabled]="!loginForm.valid">SIGN IN</button>
+              </ion-list>
+            </form>
+            <!-- <p ion-text color="pruple-heading">
+              Brake is an amazing UI Kit for designers & developers who want to brake rules and be different.
+            </p> -->
+
+          </ion-card-content>
+          <ion-footer>
+            <ion-row>
+              <ion-col padding-vertical col-12 text-center>
+                <span ion-text color="dark">
+                  Have no account yet ?
+                </span>
+                <span (click)="goToRegister()" ion-text color="pruple-heading">
+                  Sign Up
+                </span>
+              </ion-col>
+            </ion-row>
+          </ion-footer>
+
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+</ion-content>

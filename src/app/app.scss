@@ -1,0 +1,140 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.custom-bg{
+    background: linear-gradient(to bottom, rgb(55,38,179) 0%,rgb(49,34,163) 27%,rgb(38,29,116) 53%,rgb(9,5,67) 83%,rgb(2,0,49) 100%) !important;
+    
+    .logo{
+        width: 60px;
+        height: 60px;
+    }
+
+    .welcome-text{
+        font-size: 20px;
+    }
+
+    ion-card{
+        &.right-card{
+            position: absolute;
+            left: 94%;
+            min-height: 270px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            top: 10%;
+        }
+
+        &.left-card{
+            position: absolute;
+            left: -94%;
+            min-height: 270px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            top: 10%;
+        }
+
+        min-height: 300px;
+        border-radius: 5px;
+        margin-right: 7.5%;
+        margin-left: 7.5%;
+        max-width: 85%;
+
+        .card-title{
+            font-size: 16px;
+        }
+
+        ion-card-content{
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+
+    .get-started-text{
+        font-size: 16px;
+    }
+
+    .login-card{
+        // margin-top: 50%;
+        // width: 100%;
+        min-height: 450px;
+        margin: 0 !important;
+        max-width: 93%;
+        overflow: visible;
+
+        .card-title{
+            font-size: 22px;
+            padding-top: 50px;
+        }
+        .footer{
+            &::before{
+                background-image: none;
+            }
+        }
+    }
+
+    .login-logo{
+        display: block;
+
+        img{
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            top: -80px;
+            left: 32%;
+        }
+    }
+
+    &.login-page{
+        .grid{
+            width: 100%;
+            position: absolute;
+            top:25%;
+        }
+
+        &.register-page{
+            .login-card{
+                min-height: 480px !important;
+            }
+        }
+    }
+
+    .form-input{
+        border: 1px solid color($colors,gray-1) !important;
+        border-radius: 30px;
+        ion-input {
+            ::placeholder {
+                color: color($colors,pruple-heading) !important;
+                opacity: 0.6;
+            }
+          }
+    }
+    .toolbar-background{
+        background: linear-gradient(to bottom, rgb(55,38,179) 0%,rgb(49,34,163) 27%,rgb(38,29,116) 53%,rgb(9,5,67) 83%,rgb(2,0,49) 100%) !important;
+    }
+    img.logo-only{
+        width: 40px;
+    }
+}
+@media screen and (min-width:768px){
+    .custom-bg{
+        .login-logo{ 
+            img{ 
+                left: 47.5%;
+            }
+        }
+    }
+}

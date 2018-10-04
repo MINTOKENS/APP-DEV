@@ -1,0 +1,10 @@
+custom-header{
+    .searchbar-input{
+        background: color($colors,white-text) !important;
+    }
+    .searchbar-ios-cancel{
+        .button-inner{
+            color: color($colors,white-text) !important;
+        }
+    }
+}
