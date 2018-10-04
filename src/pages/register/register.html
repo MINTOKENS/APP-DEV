@@ -27,20 +27,20 @@
             <form margin-vertical #registerForm="ngForm" (submit)="register()">
               <ion-list no-lines>
                 <ion-item margin-top class="form-input">
-                  <ion-input text-center color="pruple-heading" round type="text" placeholder="FULL NAME" name="fullname"
+                  <ion-input text-center color="pruple-text" round type="text" placeholder="FULL NAME" name="fullname"
                     required [(ngModel)]="account.fullname"></ion-input>
                 </ion-item>
 
                 <ion-item margin-top class="form-input">
-                  <ion-input text-center color="pruple-heading" round type="password" placeholder="PASSWORD" required
+                  <ion-input text-center color="pruple-text" round type="password" placeholder="PASSWORD" required
                     [(ngModel)]="account.password" name="password"></ion-input>
                 </ion-item>
 
                 <ion-item margin-top class="form-input">
-                  <ion-input text-center color="pruple-heading" round type="email" placeholder="YOUR EMAIL" name="email"
+                  <ion-input text-center color="pruple-text" round type="email" placeholder="YOUR EMAIL" name="email"
                     required [(ngModel)]="account.email"></ion-input>
                 </ion-item>
-                <button margin-top ion-button round block color="pruple-heading" [disabled]="!registerForm.valid">SIGN
+                <button margin-top ion-button round block color="pruple-text" [disabled]="!registerForm.valid">SIGN
                   UP</button>
               </ion-list>
             </form>
@@ -52,7 +52,7 @@
                 <span ion-text color="dark">
                   Have an account ?
                 </span>
-                <span (click)="goToLogin()" ion-text color="pruple-heading">
+                <span (click)="goToLogin()" ion-text color="pruple-text">
                   Sign In
                 </span>
               </ion-col>

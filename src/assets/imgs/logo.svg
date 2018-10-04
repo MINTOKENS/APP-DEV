@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.779 22.859">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f9f8fc;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="logo" transform="translate(-100 -123)">
+    <g id="Logo-MIN" transform="translate(100 123)">
+      <path id="Path_2" data-name="Path 2" class="cls-1" d="M30.779,0V22.859L5.187,9.352V20.089L0,22.859V0L25.937,14.547V7.966L21.1,10.391,15.873,7.447Z"/>
+    </g>
+  </g>
+</svg>

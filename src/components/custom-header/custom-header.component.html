@@ -1,0 +1,17 @@
+<ion-navbar padding-vertical>
+    <ion-row>
+        <ion-col col-12 text-center>
+            <img class="logo-only" src="assets/imgs/logo-only.png">
+        </ion-col>
+    </ion-row>
+
+    <ion-row *ngIf="showSearch">
+        <ion-searchbar (ionInput)="searched()" [cancelButtonText]="'Cancel'" [mode]="'ios'" [showCancelButton]='true'></ion-searchbar>
+    </ion-row>
+
+    <ion-row *ngIf="title != null">
+        <ion-col class="title" ion-text color="white-text" col-12 no-padding text-center>
+            {{title}}
+        </ion-col>
+    </ion-row>
+</ion-navbar>

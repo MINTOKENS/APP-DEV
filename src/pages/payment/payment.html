@@ -1,0 +1,37 @@
+<ion-header>
+  <custom-header [title]="'Payment'" [show-search]="false"></custom-header>
+</ion-header>
+
+<ion-content padding-top padding-horizontal>
+
+  <form novalidate>
+    <ion-item>
+      <ion-label color="light-pruple-text" stacked>From</ion-label>
+      <ion-input type="text" placeholder="From"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="light-pruple-text" stacked>To</ion-label>
+      <ion-input type="text" placeholder="To"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="light-pruple-text" stacked>Amount</ion-label>
+      <ion-input type="text" placeholder="Amount"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="light-pruple-text" stacked>Memo</ion-label>
+      <ion-input type="text" placeholder="Memo"></ion-input>
+    </ion-item>
+
+    <ion-row padding-top padding-horizontal>
+      <ion-col col-12 padding-horizontal>
+        <button item-center ion-button block round color="pruple-text">
+          SUBMIT
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </form>
+</ion-content>

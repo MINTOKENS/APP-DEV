@@ -117,7 +117,7 @@
         border-radius: 30px;
         ion-input {
             ::placeholder {
-                color: color($colors,pruple-heading) !important;
+                color: color($colors,pruple-text) !important;
                 opacity: 0.6;
             }
           }
@@ -126,8 +126,28 @@
         background: linear-gradient(to bottom, rgb(55,38,179) 0%,rgb(49,34,163) 27%,rgb(38,29,116) 53%,rgb(9,5,67) 83%,rgb(2,0,49) 100%) !important;
     }
     img.logo-only{
-        width: 40px;
+        width: 40px !important;
     }
+}
+ion-tabs{
+    .tabbar{
+        .tab-button-icon{
+            font-size: 4rem;
+            height: 45px;
+        }
+        a:nth-child(3){
+            // background: color($colors,pruple-text);
+            border-radius: 30px;
+            .tab-button-icon{
+                color: color($colors,white-text);
+            }
+            
+        }
+    }
+}
+.more-tab-icon{
+    background: color($colors,pruple-text);
+    border-radius: 4px;
 }
 @media screen and (min-width:768px){
     .custom-bg{
@@ -137,4 +157,8 @@
             }
         }
     }
+}
+
+.background-gray{
+    background:  color($colors,light-gray);
 }

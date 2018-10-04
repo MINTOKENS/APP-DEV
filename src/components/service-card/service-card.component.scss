@@ -1,0 +1,71 @@
+service-card{
+    ion-card{
+        box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.25) !important;
+        overflow: visible;
+    }
+    .card-img{
+        border-radius: 50%;
+        width: 70px;
+        margin: 0 30%;
+    }
+    .service-btn{
+        max-height: 2.5rem;
+        position: absolute;
+        bottom: -15px;
+        left: 20%;
+    }
+
+    @media screen and (min-width:768px) {
+        // .card-img{
+        //     margin: 0 47%;
+        // }
+        // .service-btn{
+        //     left: 45%;
+        // }
+    }
+
+
+    .user-card{
+        box-shadow: 0px 12px 20px 0px #4055C440 !important;
+        border: 1px solid #97979720 !important;
+        border-radius: 5px !important;
+        padding: 20px 0 21px;
+        margin: 5px 5px 30px 5px !important;
+        width: calc(100% - 10px) !important;
+
+        h2{
+            color: #5E7785;
+            font-size: 14px !important;
+        }
+        h3{
+            color: #5E778570;
+            font-size: 12px !important;
+        }
+        ion-img{
+            min-width: 80px;
+            min-height: 80px;
+            overflow: hidden;
+            border-radius: 50%;
+            position: relative;
+            margin: 0 auto;
+        }
+        ion-img{
+            img{
+                position: absolute;
+                width: 100%;
+                left: 0;
+                right: 0;
+            }
+        }
+        .button{
+            box-shadow: none !important;
+            background: #9E95DB !important;
+            height: 3.6rem;
+        }
+        .card-content{
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
+    } 
+}

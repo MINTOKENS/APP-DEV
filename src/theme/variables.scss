@@ -34,14 +34,18 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:          #488aff,
-  secondary:        #32db64,
-  danger:           #f53d3d,
-  light:            #f4f4f4,
-  white-text:       #fff,
-  pruple-heading:   #4d3dbc,
-  gray-1:           #bababa,
-  dark:             #222
+  primary:              #488aff,
+  secondary:            #32db64,
+  danger:               #f53d3d,
+  light:                #f4f4f4,
+  white-text:           #fff,
+  pruple-text:          #4d3dbc,
+  light-pruple-text:    #6050c9,
+  lighter-purple-text:  #AF17EA,
+  gray-1:               #bababa,
+  light-gray:           #EBEBEB,
+  dark:                 #222,
+  primary-dark:         #3827B4
 );
  
 
@@ -81,7 +85,7 @@ $colors: (
 // The premium icon font for Ionic. For more info, please see:
 // http://ionicframework.com/docs/ionicons/
 
-@import "ionic.ionicons";
+@import "ionicons";
 
 
 // Fonts
@@ -89,3 +93,7 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+
+@import "../assets/style.css";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500');

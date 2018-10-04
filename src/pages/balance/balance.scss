@@ -1,0 +1,25 @@
+page-balance {
+    .XLM-box{
+        background: color($colors,primary-dark);
+        
+    }
+    .MIN-box{
+        background: color($colors,lighter-purple-text);
+
+    }
+    .XLM-box,.MIN-box{
+        padding-top:10px;
+        border-radius: 8px;
+        .item{
+            background: transparent !important;
+            .input{
+                background: color($colors,white-text) !important;
+                border-radius: 20px;
+            }
+        }
+    }
+
+    .background-gray{
+        border-radius: 3px;
+    }
+}
